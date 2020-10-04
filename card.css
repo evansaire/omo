@@ -1,0 +1,22 @@
+*{
+    outline: solid 1px red;
+}
+
+.card-layout{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.card{
+    background-color: lightgray;
+}
+.card-header{
+    background-color: aquamarine;
+    padding: 2em;
+}
+.card-details{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* padding: 2em; */
+}

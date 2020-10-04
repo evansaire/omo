@@ -1,0 +1,67 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(1, 0, 31);
+    padding: 50px;
+}
+
+#osagie{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* fill: white; */
+    animation: fill 0.5s ease forwards 3.5s;
+}
+
+#osagie path:nth-child(2){
+    stroke-dasharray: 533px;
+    stroke-dashoffset: 533px;
+    animation:  osagie-ani 2s ease forwards;
+}
+#osagie path:nth-child(3){
+    stroke-dasharray: 483.9px;
+    stroke-dashoffset: 483.9px;
+    animation:  osagie-ani 2s ease forwards 0.3s;
+}
+#osagie path:nth-child(4){
+    stroke-dasharray: 671.8px;
+    stroke-dashoffset: 671.8px;
+    animation:  osagie-ani 2s ease forwards 0.9s;
+}
+#osagie path:nth-child(5){
+    stroke-dasharray: 483.9px;
+    stroke-dashoffset: 483.9px;
+    animation:  osagie-ani 2s ease forwards 1.2s;
+}
+#osagie path:nth-child(6){
+    stroke-dasharray: 517px;
+    stroke-dashoffset: 517px;
+    animation:  osagie-ani 2s ease forwards 1.5s;
+}
+#osagie path:nth-child(7){
+    stroke-dasharray: 622.6px;
+    stroke-dashoffset: 622.6px;
+    animation:  osagie-ani 2s ease forwards 1.8s;
+}
+
+@keyframes osagie-ani{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill{
+    from{
+        fill: none;
+    } 
+     to{
+        fill: white;
+    }
+}

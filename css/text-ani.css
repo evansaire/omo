@@ -58,10 +58,42 @@ body{
 }
 
 @keyframes fill{
-    from{
-        fill: none;
-    } 
+    
      to{
         fill: white;
+    }
+}
+
+.love-layout{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.love{
+    stroke: white;
+}
+.love-ani path{
+    stroke-dasharray: 208px;
+    stroke-dashoffset: 208px;
+    animation: like 3s ease forwards;
+    stroke: red;
+    /* fill: white; */
+}
+.love-ani{
+    animation: fill-like 1s ease-in forwards 3s;
+
+}
+
+@keyframes like{
+    to{
+        stroke-dashoffset: 0px;
+        /* fill:white; */
+    }
+}
+
+@keyframes fill-like{
+    to{
+        fill: red;
     }
 }
